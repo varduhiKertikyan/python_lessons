@@ -1,13 +1,13 @@
 def triple(data):
     return data*3
 
-def _map(triple, list):
+def _map(func, list):
 
     ''' returns a list of triple data members'''
 
     new_list = [None] * len(list)
     for i in range(len(list)):
-        new_list[i] = triple(list[i])
+        new_list[i] = func(list[i])
     return new_list
 
 
