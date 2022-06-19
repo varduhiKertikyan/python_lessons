@@ -1,7 +1,7 @@
 def triple(data):
     return data*3
 
-def map(triple, list):
+def _map(triple, list):
 
     ''' returns a list of triple data members'''
 
@@ -13,4 +13,4 @@ def map(triple, list):
 
 #function call
 list = [3, 4, 2, 7, 8, 20]
-print(map(triple, list))
+print(_map(triple, list))
