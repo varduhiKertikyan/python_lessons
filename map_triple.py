@@ -3,7 +3,7 @@ def triple(data):
 
 def _map(func, list):
 
-    ''' returns a list of triple data members'''
+    ''' map function which returns a list applying func function'''
 
     new_list = [None] * len(list)
     for i in range(len(list)):
