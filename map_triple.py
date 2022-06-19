@@ -1,5 +1,5 @@
 def triple(data):
-    return data*3
+    return data * 3
 
 def _map(func, list):
 
