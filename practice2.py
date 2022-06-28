@@ -128,4 +128,4 @@ def  is_sublist(larger, smaller):
     return flag
 
 
-#print(is_sublist([1, 2, 3, 4], [2, 4]))
+print(is_sublist([1, 2, 3, 4], [2, 3]))
