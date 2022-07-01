@@ -27,4 +27,34 @@ def replace(source, old, new, count = None):
         i += 1
     print(result)
 
-replace("kmabckkkabckkkkabc", "abc", "gg", 2)
+#replace("kmabckkkabckkkkabca", "abc", "gg")
+
+def split(source, sep):
+    list = []
+    j = 0
+    for i in range(len(source)):
+        if sep == source[i]:
+            list.append(source[j:i])
+            j = i + 1
+    list.append(source[j:])
+    #print(list)
+
+split("bb,cc,dd,ee", ",")
+
+
+def split(source, sep):
+    len_sep = len(sep)
+    res = []
+    idx = 0
+    for i in range(0, len(source)):
+        if source[i:i + len_sep] == sep:
+            res.append(source[idx:i])
+            idx = i + len_sep
+    if len(source) > idx:
+        res.append(source[idx:])
+    return res
+
+#print(split("aa,,bb,,cc,,dd", ",,"))
+
+
+
